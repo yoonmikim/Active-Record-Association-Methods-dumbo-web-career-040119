@@ -11,6 +11,6 @@ class Song < ActiveRecord::Base
     # self.assign_attributes(id: Artist.find_by(name: “Drake”).id, name: "Drake")
     # self.artist.name = "Drake"
     # self.artist.create(name: "Drake")
-    self.artist.where(name: 'Drake')
+    self.artist.when(name: 'Drake')
   end
 end
