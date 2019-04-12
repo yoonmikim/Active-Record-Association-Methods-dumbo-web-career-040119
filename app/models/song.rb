@@ -10,5 +10,6 @@ class Song < ActiveRecord::Base
     # when this method is called it should assign the song's artist to Drake
     # self.assign_attributes(id: Artist.find_by(name: “Drake”).id, name: "Drake")
     # self.artist.name = "Drake"
+    self.artist.find_or_create_by(name: "Drake")
   end
 end
